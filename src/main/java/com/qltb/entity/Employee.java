@@ -10,6 +10,7 @@ import javax.persistence.Id;
 
 import javax.persistence.OneToMany;
 
+
 @Entity
 public class Employee {
 	@Id
@@ -26,7 +27,8 @@ public class Employee {
 			cascade = CascadeType.ALL,
 			orphanRemoval = true			
 	)
-	private List<Device> device;
+	
+	private List <Device> device;
 	
 	public Employee() {
 		super();
