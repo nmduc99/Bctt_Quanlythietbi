@@ -23,8 +23,8 @@ public class Employee {
 	private String phonenumber;
 	private String email;
 	@OneToMany(
-			mappedBy = "employee",
-			cascade = CascadeType.ALL,
+			mappedBy = "employee", //Trỏ tới tên biến ở trong Device
+			cascade = CascadeType.ALL,  // Quan hệ 1-n với đối tượng ở dưới (Device) (1 nhân viên quản lí nhiều thiết bị) 	
 			orphanRemoval = true			
 	)
 	
